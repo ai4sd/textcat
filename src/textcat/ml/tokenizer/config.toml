@@ -1,0 +1,20 @@
+[adsorbate]
+smiles = false
+formula = true
+remove_asterisk = true
+pos = 0
+
+[material]
+slices = true
+formula = false
+pos = 1
+
+[surface]
+Miller = true
+termination = false
+pos = 2
+
+[interaction]
+
+[general]
+distinguishCHNO = true

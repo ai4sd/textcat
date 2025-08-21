@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textcat"
+version = "0.0.1"
+dependencies = [
+]
+
+authors = [
+  {name = "Oliver Schilter"},
+  {name = "Santiago Morandi"},
+]
+maintainers = [
+  {name = "Oliver Schilter"},
+  {name = "Santiago Morandi"},
+]
+description = "Text representation for molecules on surfaces"
+readme = "README.md"
+keywords = ["heterogeneous catalysis", "text representation", "adsorption", "materials"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { "" = "src" }
+
+[project.scripts]
+"mlm_bert" = "textcat.scripts.mlm_bert:main"
